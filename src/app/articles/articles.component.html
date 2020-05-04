@@ -1,3 +1,16 @@
+<div>
+  <h3>Search filter</h3>
+  <p>Separate fields with '&' character. All fields are : </p>
+  <ul>
+    <li>title</li>
+    <li>authors</li>
+    <li>content</li>
+    <li>id</li>
+  </ul>
+  <input type="textarea" #filter placeholder="write your filter here" />
+  <button (click)="filterArticles(filter.value)">Search it</button>
+  <hr />
+</div>
 <div *ngFor="let article of this.articles() | async">
   <app-article  [article]="article" (deletedArticle)="delete($event)"></app-article>
 </div>

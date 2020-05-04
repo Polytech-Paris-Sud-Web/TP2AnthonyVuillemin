@@ -33,4 +33,7 @@ export class ArticlesComponent implements OnInit {
     this._articles = this.articleService.get();
   }
 
+  filterArticles(filter : string) {
+    this._articles = this.articleService.filter(filter);
+  }
 }

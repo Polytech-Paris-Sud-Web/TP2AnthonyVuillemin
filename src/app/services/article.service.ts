@@ -16,6 +16,10 @@ export class ArticleService {
     return this.http.get<Article[]>("http://localhost:3000/articles");
   }
 
+  public filter(filter : string): Observable<Article[]> {
+    return this.http.get<Article[]>(`http://localhost:3000/articles/?${filter}`);
+  }
+
   public delete(id:number): Observable<any> {
     return this.http.delete<any>(`http://localhost:3000/articles/${id}`);
   }
