@@ -1,3 +1,12 @@
+# Pourquoi mettre à jours Angular
+
+Utiliser la dernière version d'Angular permet de :
+
+1. Bénéficier de ses dernières fonctionnalités
+2. Empècher l'usage d'anciennes fonctions obsolètes et potentiellement dangereuses (failles)
+
+De plus le processus de migration est important à voire car en entreprise, il n'est malheuresement pas rare de travailler sur d'ancienne version. Dans ces cas il est souvent nécessaire de migrer vers les dernières évolutions du logiciel (ici Angular). Et, même sans imaginer le cas précedent, il arrivera forcement un jour avec un évolution majeur du produit, il faudra donc appliquer correctement la procédure de migration vers la dernière version du framework.
+
 # SimpleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
